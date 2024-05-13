@@ -27,9 +27,9 @@ class connect_four:
                     if self.board[row][column] == " ":
                         self.board[row][column] = self.player_one_tile
                         taken = True
-                        break;
+                        break
                 if taken == True:
-                    break;
+                    break
             self.turn = 'two'
         else:
             for row in r:
@@ -37,9 +37,9 @@ class connect_four:
                     if self.board[row][column] == " ":
                         self.board[row][column] = self.player_two_tile
                         taken = True
-                        break;
+                        break
                 if taken == True:
-                    break;
+                    break
             self.turn = 'one'
         if self.check_winner() == self.empty:
             if self.check_full() == True:
